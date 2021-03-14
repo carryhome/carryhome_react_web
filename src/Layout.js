@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/nav/Home";
+import AboutUs from "./components/AboutUs";
 import "./App.scss";
 
 const Layout = () => {
@@ -10,7 +11,7 @@ const Layout = () => {
       <div className="">
         <Route exact path="/" component={Home} />
 
-        {/* <Route exact path="/about-us" component={AboutUs} /> */}
+        <Route exact path="/company" component={AboutUs} />
 
         {/* <Route
           path="/register"

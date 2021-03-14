@@ -1,4 +1,4 @@
 {
-  "carryHomeApi": "https://api.carryhome.in",
-  "prodApi": ""
+  "carryHomeApi": "http://localhost:8080",
+  "prodApi": "https://api.carryhome.in"
 }
