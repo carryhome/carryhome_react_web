@@ -32,10 +32,11 @@ export const NavBar = observer(() => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-center mr-sm-2">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav.Link href="#home">HOME</Nav.Link>
+          <Nav.Link href="#services">SERVICES</Nav.Link>
+          <Nav.Link href="#solutions">SOLUTIONS</Nav.Link>
+          <Nav.Link as={Link} to="/company">ABOUT US</Nav.Link>
+          <NavDropdown title="CAREERS" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
