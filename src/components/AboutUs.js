@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 let Card = props => {
   return (
-    <div style={{ margin: '1em', backgroundColor:'#F0F8FF'}}>
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ margin: '1em', backgroundColor:'#F0F8FF'}}>
       <h1>{props.header}</h1>
       <p>{props.para}</p>
       <div class="row">
@@ -22,8 +21,6 @@ let Card = props => {
           <div>{props.location}</div>
         </div>
       </div>
-    </div>
-      
     </div>
   )
 }
@@ -84,9 +81,15 @@ const AboutUs = () => {
   }
    
   return (
-    <div style= {{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <Form onSubmit={addNewCard} /> 
-      <CardList cards={cards} />
+    <div className="container-fluid" style= {{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <div class="col">
+        <div class="row-sm-6" style= {{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
+          <Form onSubmit={addNewCard} />
+        </div>
+        <div class="row-sm-6">
+          <CardList cards={cards} />
+        </div>
+      </div>
     </div>
   )
 }
