@@ -6,10 +6,10 @@ let Card = props => {
       <h1>{props.header}</h1>
       <p>{props.para}</p>
       <div class="row">
-        <div class="col-sm-4" style={{backgroundColor:'#EBF4FA'}}>
+        <div class="col-sm-3" style={{backgroundColor:'#EBF4FA', display: 'flex', justifyContent:'center'}}>
           <img alt="avatar" style={{ width: '250px', backgroundColor:'lightblue' }} src={props.avatar_url} />
         </div>
-        <div class="col-sm-8" style={{backgroundColor:'lightblue'}}>
+        <div class="col-sm-9" style={{backgroundColor:'lightblue'}}>
           <div style={{ fontWeight: 'bold' }}>{props.name}</div>
           <div>{props.login}</div>
           <div><a href={props.html_url} target="_blank">{props.html_url}</a></div>
