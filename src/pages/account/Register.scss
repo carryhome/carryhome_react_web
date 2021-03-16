@@ -1,0 +1,17 @@
+.li_element {
+  padding: 10px;
+  margin-left: 10px;
+}
+.li_element:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.li_element:active {
+  color: #14bef0;
+  border-bottom: 4px solid #14bef0;
+}
+
+.user_select:hover {
+  cursor: pointer;
+  // text-decoration:underline;
+}
