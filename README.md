@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## gh-pages deployment step
+1. just run bellow command from your current local branch, no need to switch any branch, no need to commit/push/pull request
+  npm run deploy
+that's it
+after that go to github setting page of that branch and 
+select :
+source = gh-pages 
+root = root
+custom domain = carryhome.in
+after save the setting
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -75,3 +89,18 @@ logo color code: #41bc9d
 
 ### ucourse website info
 #db4c47
+
+
+------- git command ---------
+1. check all branch
+  git branch
+2. add changes in current current branch
+  git add .
+3. commit local changes in your current branch
+  git commit -m "my new changes"
+4. push your local branch changes to your remote branch
+  git push origin "my new changes"
+5. change branch to other branch (swich from one branch to another)
+  git checkout "another branch name"
+6. create new branch 
+  git chechout -b "new branch name"
