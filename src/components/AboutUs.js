@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 let Card = props => {
   return (
     <div className="container-fluid" style={{ margin: '1em', backgroundColor:'#F0F8FF'}}>
+      <h1> Hi we will come back soon...</h1>
       <h1>{props.header}</h1>
       <p>{props.para}</p>
       <div class="row">
